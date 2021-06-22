@@ -6,14 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>影片</title>
 </head>
-<body>
+<style>
+  body {
+    background-image: url(img/背景3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  </style>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      margin: 0.5;
+      margin: 0;
     }
     
-    /* Style the header */
     .header {
       padding: 60px;
       text-align: center;
@@ -21,32 +27,27 @@
       color: white;
     }
     
-    /* Increase the font size of the h1 element */
+
     .header h1 {
-      font-size: 70px;
+      font-size: 60px;
     }
+
+    .side {
+          flex: 20%;
+          padding: 10px;
+        }
     
-    /* Style the top navigation bar */
-    .navbar {
-      overflow: hidden;
-      background-color: #333;
-    }
     
-    </style>
-    </head>
+  </style>
     <body>
-    
     <div class="header">
       <h1>影片</h1>
     </div>
-    <style>
-        body {
-          background-image: url(img/背景3.jpg);
-          background-repeat: no-repeat;
-          background-attachment: fixed;  
-          background-size: cover;
-        }
-        </style>
+    </body>
+
+<body>     
+  <div class="row">
+    <div class="side">
 <h1>吉隆坡塔</h1>
 <video width="1000" height="500" controls>  
   <source src="movie/吉隆坡塔.mp4" type="video/mp4">
@@ -57,8 +58,8 @@
 <video width="1000" height="500" controls>
     <source src="movie/双峰塔.mp4" type="video/mp4">
   </video>
-</body>
-</html>
+    </div>
+  </div>
 
 </body>
 </html>
